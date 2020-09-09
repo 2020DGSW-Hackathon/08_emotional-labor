@@ -21,6 +21,7 @@ namespace TipSoGo.Models
             this.UserName = b.UserName;
             this.NumComments = b.NumComments;
             this.Topic = b.Topic;
+            this.CreatedDate = b.CreatedDate;
         }
     }
 }

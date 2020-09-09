@@ -18,6 +18,7 @@ namespace TipSoGo.Controllers
 
             return Ok(bulletins);
         }
+
         [HttpGet]
         [Route("API/BulletinBoard/GetBulletin")]
         public IHttpActionResult GetBulletin([FromUri] int idx)
@@ -30,6 +31,55 @@ namespace TipSoGo.Controllers
             };
 
             return Ok(bulletin);
+        }
+
+        [HttpGet]
+        [Route("API/BulletinBoard/InsertBulletin")]
+        public IHttpActionResult InsertBulletin([FromBody] Bulletin b)
+        {
+            bool result = WebApiApplication.bulletinBoardViewModel.InsertBulletin(b);
+            if (result)
+            {
+                return Ok(new Json() { Status = 200, Message = "정상적으로 삽입 되었습니다." });
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpGet]
+        [Route("API/BulletinBoard/GetComments")]
+        public IHttpActionResult GetComments([FromUri] int idx)
+        {
+            var result = WebApiApplication.bulletinBoardViewModel.GetComments(idx);
+            if (result != null)
+            {
+                return Ok(new CommentsJson()
+                {
+                    Status = 200,
+                    Message = "성공적으로 조회 되었습니다.",
+                    comments = result
+                });
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        [HttpGet]
+        [Route("API/BulletinBoard/InsertComment")]
+        public IHttpActionResult InsertComment([FromBody] Comment c)
+        {
+            bool result = WebApiApplication.bulletinBoardViewModel.InsertComment(c);
+            if (result)
+            {
+                return Ok(new Json() { Status = 200, Message = "성공적으로 삽입 되었습니다." });
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }

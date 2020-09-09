@@ -1,8 +1,4 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -15,6 +11,7 @@ namespace TipSoGo
     {
         public static MySqlConnection conn { get; set; }
         public static BulletinBoardViewModel bulletinBoardViewModel;
+        public static AuthViewModel authViewModel;
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -22,7 +19,9 @@ namespace TipSoGo
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            conn = new MySqlConnection("Server = localhost; Database = tipsogo; Uid = root; Pwd = y28645506;");
             bulletinBoardViewModel = new BulletinBoardViewModel();
+            authViewModel = new AuthViewModel();
         }
     }
 }

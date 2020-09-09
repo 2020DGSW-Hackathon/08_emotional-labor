@@ -214,3 +214,6 @@ D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\bin\System.Web.WebPages.Razor.xml
 D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\bin\Antlr3.Runtime.pdb
 D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\obj\Debug\TipSoGo.csproj.CopyComplete
+D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\bin\System.Web.Cors.dll
+D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\bin\System.Web.Http.Cors.dll
+D:\PR\Git\Hackerton\08_emotional-labor\TipSoGo\bin\System.Web.Http.Cors.xml

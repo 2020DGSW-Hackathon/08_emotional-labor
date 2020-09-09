@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace TipSoGo.Models
 {
@@ -16,5 +17,7 @@ namespace TipSoGo.Models
         public int NumComments { get; set; }
         [Required]
         public string Topic { get; set; }
+        [Required]
+        public string CreatedDate { get; set; }
     }
 }
