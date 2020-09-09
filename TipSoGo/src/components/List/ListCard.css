@@ -1,0 +1,36 @@
+.idx {
+    width: 150px;
+    height: 20px;
+    font-size: 13px;
+    border-bottom: 1px gray solid;
+    vertical-align: middle;
+    text-align: center;
+}
+.title {
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    border-bottom: 1px gray solid;
+    vertical-align: middle;
+    text-align: left;
+}
+.name {
+    width: 200px;
+    height: 20px;
+    border-bottom: 1px gray solid;
+    vertical-align: middle;
+    text-align: center;
+}
+.date {
+    width: 130px;
+    height: 20px;
+    font-size: 13px;
+    border-bottom: 1px gray solid;
+    vertical-align: middle;
+        text-align: center;
+}
+
+tr {
+    height: 50px;
+    margin: 10px;
+}

@@ -1,0 +1,32 @@
+th {
+    background-color: #3485FF;
+    color: white;
+}
+.List_Container {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 0;
+    max-width: 1000px;
+}
+span {
+    border: 0;
+    background-color: #3485FF;
+    text-decoration-style: none;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+Link {
+    text-decoration-style: none;
+    color: white;
+    vertical-align: middle;
+    background-color: #3485FF;
+    padding: 15px;
+    margin: 20px;
+}
+img {
+    width: 20px;
+}

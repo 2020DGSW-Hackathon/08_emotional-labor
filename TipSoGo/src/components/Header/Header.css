@@ -1,0 +1,30 @@
+.Header {
+    height: 90px;
+    background-color: #3485FF;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+}
+#mainLogo {
+    color: white;
+    font-size: 35px;
+    float: left;
+}
+#myAccount {
+    cursor: pointer;
+    color: white;
+    padding: 27px;
+    font-size: 25px;
+    float: right;
+}
+#header_title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 35px;
+    color: white;
+    margin-top: 20px;
+}
